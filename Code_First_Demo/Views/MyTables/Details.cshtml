@@ -1,0 +1,42 @@
+﻿@model Code_First_Demo.Model.MyTable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MyTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EMP_FNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMP_FNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMP_LNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMP_LNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMP_DEPT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMP_DEPT)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EMP_NO }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
